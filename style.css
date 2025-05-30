@@ -56,6 +56,15 @@ form {
   font-size: 16px;
 }
 
+.submit-btn:hover {
+    background-color: rgb(239, 235, 224);
+    border: 2px solid white;
+}
+
+.submit-btn:active {
+    background-color: #a3a380;
+}
+
 .poem {
   font-family: "Cormorant Garamond", sans-serif;
   font-size: 20px;
