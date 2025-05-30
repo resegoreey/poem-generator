@@ -25,4 +25,39 @@ function displayPoem(response) {
     cursor: "",
   });
 }
+
 poemForm.addEventListener("submit", generatePoem);
+
+function iconFloating() {
+  const icons = document.querySelectorAll(".floating");
+  const styleSheet = document.styleSheets[0];
+
+  icons.forEach((icon, index) => {
+    const id = `fly-${index}`;
+    const startX = Math.random() * 100;
+    const startY = Math.random() * 100;
+    const midX = Math.random() * 100;
+    const midY = Math.random() * 100;
+    const endX = Math.random() * 100;
+    const endY = Math.random() * 100;
+    const duration = Math.random() * 15 + 15;
+    const delay = Math.random() * 10;
+
+    const keyframes = `
+    @keyframes ${id} {
+      0% { top: ${startY}%; left: ${startX}%; opacity: 0;}
+      10% {opacity: 1;}
+      50% { top: ${midY}%; left: ${midX}%; }
+      100% { top: ${endY}%; left: ${endX}%; opacity: 0.5;}
+    }
+  `;
+    styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+    setTimeout(() => {
+      icon.style.top = `${startY}%`;
+      icon.style.left = `${startX}%`;
+      icon.style.animation = `${id} ${duration}s infinite alternate ease-in-out`;
+    }, delay * 1000);
+  });
+}
+
+iconFloating();
