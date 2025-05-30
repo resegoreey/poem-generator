@@ -15,6 +15,23 @@ form {
   background-color: rgb(215, 206, 147);
   padding: 40px;
   box-shadow: 0 20px 50px rgba(239, 235, 224, 0.4);
+  display: flex;
+}
+
+.instructions {
+  padding: 15px;
+  width: 80%;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+}
+
+.submit-btn {
+    border: none;
+    padding: 20px;
+    color: black;
+    background-color: rgb(239, 235, 224);
+    border-radius: 30px;
 }
 
 .container {
