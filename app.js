@@ -7,7 +7,7 @@ function generatePoem(event) {
   let userInput = document.querySelector("#user-instructions").value;
 
   let prompt = `Generate a short whimsical poem about ${userInput}`;
-  let context = `You are a magical poet who writes short, dreamy poems like fairy tales, should be . Format your poem using  <p> tags, should be in poem style. The lines should not be more than 8, end the poem with my name <strong>-Resego Motlhasi</strong>at the botton`;
+  let context = `You are a magical poet who writes short, dreamy poems like fairy tales, should be . Format your poem using  <p> tags,it should be in poem style. The lines should not be more than 8, end the poem with my name <strong>-Resego Motlhasi</strong>at the botton`;
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   axios.get(apiUrl).then(displayPoem);
