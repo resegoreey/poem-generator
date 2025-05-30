@@ -22,6 +22,38 @@ body::before {
   z-index: -1;
 }
 
+.floating-icons img {
+  position: fixed;
+  width: 60px;
+  pointer-events: none;
+  z-index: 0;
+  animation: flyAcross 30s linear infinite;
+}
+
+.butterfly {
+  animation-duration: 25s;
+  animation-name: flutter;
+}
+
+.flyer-1{
+  width: 50px;
+  animation-delay: 0s;
+}
+.flyer-2{
+  width: 70px;
+  animation-delay: 5s;
+}
+.flyer-3{
+  width: 40px;
+  animation-delay: 10s;
+}
+.flyer-4 {width:40px; animation-delay: 10s; }
+
+.fairy {
+  animation-duration: 35s;
+  animation-name: soar;
+}
+
 .container {
   margin: 120px auto;
   max-width: 600px;
@@ -121,6 +153,41 @@ a {
   animation: blink-animation 1s steps(5, start) infinite;
 }
 
+@keyframes flyAcross {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(120vw) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes flutter {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(60vw) translateY(-20vh) rotate(30deg);
+  }
+  100% {
+    transform: translateX(120) translateY(0) rotate(0deg);
+  }
+}
+
+@keyframes soar {
+  0% {
+    transform: translateX(0) translateY(0) scale(1);
+  }
+  50% {
+    transform: translateX(60vw) translateY(10vh) scale(1.1);
+  }
+  100% {
+    transform: translateX(120vw) translateY(-10vh) scale(1);
+  }
+}
+
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -171,11 +238,10 @@ a {
 }
 
 @keyframes glowPoem {
-    0% {
-      box-shadow: 0 0 10px #ffd3e0, 0 0 20px #fcd9ff, 0 0 30px #ffe6fa;
-    }
-    100% {
-      box-shadow: 0 0 20px #ffd3e0, 0 0 35px #fcd9ff, 0 0 50px #ffe6fa;
-    }
+  0% {
+    box-shadow: 0 0 10px #ffd3e0, 0 0 20px #fcd9ff, 0 0 30px #ffe6fa;
   }
-  
+  100% {
+    box-shadow: 0 0 20px #ffd3e0, 0 0 35px #fcd9ff, 0 0 50px #ffe6fa;
+  }
+}
