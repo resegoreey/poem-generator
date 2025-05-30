@@ -7,7 +7,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   color: #333;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quintessential", sans-serif;
 }
 
 body::before {
@@ -79,7 +79,7 @@ form {
   border-radius: 40px;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quintessential", sans-serif;
 }
 
 .submit-btn {
@@ -91,7 +91,7 @@ form {
   border-radius: 30px;
   margin-left: 10px;
   font-size: 16px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quintessential", sans-serif;
 }
 
 .submit-btn:hover {
