@@ -35,8 +35,9 @@ body::before {
   width: 40px;
   height: 40px;
   animation: float2 10s infinite ease-in-out;
-  opacity: 0.7;
+  opacity: 0;
   pointer-events: none;
+  animation-fill-mode: forwards;
 }
 
 .container {
@@ -145,30 +146,6 @@ a {
   }
   to {
     transform: translate(100vw, 100vh);
-  }
-}
-
-@keyframes flutter {
-  0% {
-    transform: translateX(0) translateY(0) rotate(0deg);
-  }
-  50% {
-    transform: translateX(60vw) translateY(-20vh) rotate(30deg);
-  }
-  100% {
-    transform: translateX(120) translateY(0) rotate(0deg);
-  }
-}
-
-@keyframes soar {
-  0% {
-    transform: translateX(0) translateY(0) scale(1);
-  }
-  50% {
-    transform: translateX(60vw) translateY(10vh) scale(1.1);
-  }
-  100% {
-    transform: translateX(120vw) translateY(-10vh) scale(1);
   }
 }
 

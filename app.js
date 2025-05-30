@@ -55,8 +55,8 @@ function iconFloating() {
     setTimeout(() => {
       icon.style.top = `${startY}%`;
       icon.style.left = `${startX}%`;
-      icon.style.animation = `${id} ${duration}s infinite alternate ease-in-out`;
-    }, delay * 1000);
+      icon.style.animation = `${id} ${duration}s ${delay}s infinite alternate ease-in-out`;
+    }, 0);
   });
 }
 
