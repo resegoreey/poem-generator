@@ -1,4 +1,23 @@
 body {
-    background-color: #fbfaf5;
-    color: #333;
+  background-color: #fbfaf5;
+  color: #333;
+}
+
+
+hi {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.6;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+  background-color: #d8cfe3;
+}
+
+header {
+  margin-bottom: 30px;
+  max-width: 600px;
 }
